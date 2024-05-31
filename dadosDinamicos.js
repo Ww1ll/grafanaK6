@@ -11,7 +11,7 @@ export default function(){
 
 export default function(){
     let apiKey = __ENV.API_KEY
-    let rest = http.get(`https://api.external.com/data?api_key=${apiKey}`)
+    let res = http.get(`https://api.external.com/data?api_key=${apiKey}`)
     check(res, { 'status was 200':  (r) => r.status === 200 })
 
 }
